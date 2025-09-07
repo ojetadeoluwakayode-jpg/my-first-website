@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        {% extends "master.html" %}
+
+        {% block title %}
+        Login Forum.
+        {% endblock %}
+
+        {% block content %}
+
+
+
+        <form class="container" action="action_page/" target="_blank" method="post">
+            <div class="container, myinfo">
+                <h1>Please fill in the details below;</h1>
+                <li>
+                    <ul><label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </ul>
+                    <ul><label for="psw">&nbsp;&nbsp;&nbsp;<br><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                    </ul>
+                    <ul><label for="integer"><br><b>Phone_number</b></label>
+                        <input type="integer" placeholder="Enter Phone_number" name="integer" required>
+                    </ul>
+                    <ul><label for="integer"><br><b>Jambscore</b></label>
+                        <input type="integer" placeholder="Enter Jambscore" name="integer" required>
+                    </ul>
+                    <ul><button type="submit" onclick="window.location = 'action_page/'">&nbsp;&nbsp;Login</button></ul>
+                </li>
+            </div>
+        </form>
+
+
+
+        {% endblock %}
+    </body>
+
+</html>

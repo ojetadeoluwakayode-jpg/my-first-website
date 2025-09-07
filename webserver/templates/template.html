@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+
+    <body>
+        {% extends "master.html" %}
+
+        {% block content %}
+
+        <table border="2">
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Jambscore</th>
+            </tr>
+            {% for y in mywebservers %}
+            <tr>
+                <td>{{ y.id }}</td>
+                <td>{{ y.firstname }}</td>
+                <td>{{ y.lastname }}</td>
+                <td>{{ y.age }}</td>
+                <td>{{ y.jambscore }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endblock %}
+    </body>
+
+</html>

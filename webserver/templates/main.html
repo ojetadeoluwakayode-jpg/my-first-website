@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        {% extends "master.html" %}
+
+        {% block title %}
+        Registration site!
+        {% endblock %}
+
+        {% block content %}
+        <div class="main">
+            {% include "mymenu.html" with sponsors="TECHSQUAD LIMITED" %}
+        </div>
+        <hr>
+        <div class="myinfo">
+
+            <h1>Welcome</h1>
+
+
+            <p>This is my first webpage.</p>
+            <hr>
+
+            <h3>Name of Applicants are in the link below.</h3>
+            <h3>But Firstly,<a href="login">Login</a> &nbsp;please!</h3>
+
+
+
+
+            <p>Check out all our <a href="webserver/">applicants</a></p>
+            <footer>
+                &lt;&lt;&lt;<a href="about">@All right reserved.</a>&gt;&gt;&gt;
+            </footer>
+            <hr>
+        </div>
+
+        {% endblock %}
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        {% extends "master.html" %}
+
+        {% block title %}
+        Registration site - List of all applicants
+        {% endblock %}
+
+        {% block content %}
+        <div class="myinfo">
+            <h1>Those who Signed_in.</h1>
+
+            <ul>
+                {% for y in mywebservers %}
+                <li onclick="window.location = 'details/{{ y.slug }}'">
+                    <ul>{{ y.firstname }} {{ y.lastname }}</ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% endblock %}
+
+    </body>
+
+</html>

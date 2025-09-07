@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        {% extends "master.html" %}
+
+        {% block title %}
+        Details about {{ webserver.firstname }} {{ webserver.lastname }}
+        {% endblock %}
+
+
+        {% block content %}
+        <div class="myinfo">
+            <h1>{{ webserver.firstname }} {{ webserver.lastname}}</h1>
+            <p> Phone: {{ webserver.phone_number }}</p>
+            <p>Email: {{ webserver.email_address }}</p>
+            <p>Age: {{ webserver.age }}</p>
+            <p>Jambscore: {{ webserver.jambscore}}</p>
+            <hr>
+
+        </div>
+
+        {% endblock %}
+    </body>
+
+</html>
